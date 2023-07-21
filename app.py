@@ -45,7 +45,7 @@ if user_menu == 'Overall Analysis':
     nations = df['region'].unique().shape[0]
 
     st.title("Top Statistics")
-    col1,col2,col3 = st.beta_columns(3)
+    col1,col2,col3 = st.columns(3)
     with col1:
         st.header("Editions")
         st.title(editions)
@@ -56,7 +56,7 @@ if user_menu == 'Overall Analysis':
         st.header("Sports")
         st.title(sports)
 
-    col1, col2, col3 = st.beta_columns(3)
+    col1, col2, col3 = st.columns(3)
     with col1:
         st.header("Events")
         st.title(events)
